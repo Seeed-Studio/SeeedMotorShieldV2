@@ -109,19 +109,19 @@ void MotorDriver::speed(int motor_id, int _speed)
         {
             digitalWrite(MOTORSHIELD_IN3, HIGH);
             digitalWrite(MOTORSHIELD_IN4, LOW);
-            PWM.setPwm(9, _speed, 10000);
+            PWM.setPwm(10, _speed, 10000);
         }
         else if(_speed<0)
         {
             digitalWrite(MOTORSHIELD_IN3, LOW);
             digitalWrite(MOTORSHIELD_IN4, HIGH);
-            PWM.setPwm(9, 0-_speed, 10000);
+            PWM.setPwm(10, 0-_speed, 10000);
         }
         else
         {
             digitalWrite(MOTORSHIELD_IN3, LOW);
             digitalWrite(MOTORSHIELD_IN4, LOW);
-            PWM.setPwm(9, _speed, 10000);
+            PWM.setPwm(10, _speed, 10000);
         }
         break;
         
